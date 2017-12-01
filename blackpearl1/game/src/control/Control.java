@@ -29,7 +29,7 @@ public class Control {
 					System.out.println("密码正确");
 					int level = Integer.parseInt(rs.getString("level"));
 					int money = Integer.parseInt(rs.getString("money"));
-					// 如果是里面的字段，就开始填充 user 信息
+					// 如果是用户存在，就开始填充 user 信息
 					user.setLevel(level);
 					user.setMoney(money);				
 				} else {
